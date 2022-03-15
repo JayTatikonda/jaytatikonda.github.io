@@ -5,7 +5,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Jay Tatikonda's Protfolio</title>
+    <title>Sightseeing Helper</title>
     <meta content="width=device-width, initial-scale=1" name="viewport">
     <link href="css/normalize.css" rel="stylesheet" type="text/css">
     <link href="css/styles.css" rel="stylesheet" type="text/css">
@@ -24,12 +24,12 @@
 <body class="body">
     <!--Navbar code block-->
     <!--Used SVG icons from https://boxicons.com/-->
+
     <nav class="navbar">
         <ul class="navbar-nav">
 
-
             <li class="nav-item">
-                <a href="index.html" class="nav-link">
+                <a href="index.html#projectsSection" class="nav-link">
                     <!--Icon retrieved from https://boxicons.com/?query=briefcase-->
                     <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 24 24" style="fill:#ff7eee;"><path d="M20 6h-3V4c0-1.103-.897-2-2-2H9c-1.103 0-2 .897-2 2v2H4c-1.103 0-2 .897-2 2v11c0 1.103.897 2 2 2h16c1.103 0 2-.897 2-2V8c0-1.103-.897-2-2-2zm-5-2v2H9V4h6zM8 8h12v3H4V8h4zM4 19v-6h6v2h4v-2h6l.001 6H4z"></path></svg>
                     <span class="link-text">Projects</span>
@@ -57,69 +57,36 @@
     <!--Using Main Tag to contain all the body elements and create separation between nav and other elements. NavBar takes about 5rem space on the left, so I moved the main tag by 5 rem from the left.-->
     <main>
         <!--Everything except NAVBAR should be inside main-->
+        <div class="section imgcontainer">
+            <div class="container container-defaults">
+                <h1 class="projectpagetitle">Sightseeing Helper</h1>
+                <br>
+            </div>
+            <!--Using multiple images with different sizes for efficiency and faster loading times-->
+            <!-- <img src="images/ttt.png" loading="lazy" sizes="100vw" srcset="images/_DSC4686-p-500.jpeg 500w, images/_DSC4686-p-800.jpeg 800w, images/_DSC4686-p-1600.jpeg 1600w, images/_DSC4686-p-2000.jpeg 2000w, images/_DSC4686-p-2600.jpeg
+                2600w, images/_DSC4686-p-3200.jpeg 3200w, images/_DSC4686.jpg 4200w " alt="short film project cover photo" class="image-4"> -->
+            <img src="images/gps.jpg" loading="lazy" alt="gps map with markers" class="image-4">
+        </div>
         <div class="section">
             <div class="container container-defaults">
-                <div class="text-block">Jay Tatikonda</div>
-                <h3 class="projectheading">I'm a recent graduate with a Bsc. in Computing Science and a minor in French. I'm interested in Web Development, Data Science and Android Development!</h3>
-                <!-- <h3 class="projectheading">I'm interested in Web Development, Data Science and Android Development!</h3> -->
+                <div class="grid-layout-defaults sidebysidegrid">
+                    <div class="projectinfoblock">
+                        <div class="projectlabel">Project Type</div>
+                        <div class="projectinfo">Artificial Intelligence</div>
+                        <div class="projectlabel">Technical Skills Applied</div>
+                        <div class="projectinfo">Python, Data Gathering, Data Cleaning, Data Transforming, Data Analysis</div>
+                    </div>
+                    <div class="projectdescription descriptionBox">
+                        <h2>What does the helper do?</h2>
+                        <p>When you give it a bunch of photos or locations you have or are planning to visit, it gives you a list of suggested locations that you could visit. These locations are determined based on the metadata in the photos, or the location data that is otherwise entered. Locations that are nearby and those that match your preferences are provided.</p>
+                        <a href="https://github.com/JayTatikonda/RecommendationHelper" target="_blank">Take a look at the code here!</a>
+                        
+                    </div>
+                </div>
             </div>
         </div>
 
-        <div class="section" id="projectsSection">
-          <div class="container container-defaults">
-              <h2 class="secondaryheading">My Projects</h2>
-              <p class="projectsectionpara">A selection of projects that I have worked on, that potray my skills and experience in the field.</p>
-              <div class="projectscontainer">
-      
-                  <div class="projcontainer">
-                      <div class="projectdiv">
-                          <div class="projecttype">Web Development</div>
-                          <h3 class="projectheading">Recipe Reccomender</h3>
-                          <p class="projectpara">A web app that takes the list of ingredients you have in your fridge or pantry and suggests recipes you can make right now. The suggested recipes account for dietary and cost preferences.</p>
-                          <div class="text-block-2"><a href="Diet_Planner.html">View Project</a></div>
-                      </div>
-                      <!--Using multiple images with different sizes for efficiency and faster loading times-->
-                      <img src="images/food.PNG" loading="lazy" class="image-2 projectDisplayImgAlign">
-                  </div>
-      
-                  <div class="projcontainer">
-                      <div class="projectdiv">
-                          <div class="projecttype">Artificial Intelligence</div>
-                          <h3 class="projectheading">Unbeatable Tic-Tac-Toe</h3>
-                          <p class="projectpara">An unbeatable game of Tic-Tac-Toe, whose AI uses the Monte-Carlo Tree Search method to figure out its next move.</p>
-                          <div class="text-block-2"><a href="ttt.html">View Project</a></div>
-                      </div>
-                      <!--Using multiple images with different sizes for efficiency and faster loading times-->
-                      <img src="images/ttry2.webp" loading="lazy" class="image-5 projectDisplayImgAlign">
-                  </div>
-      
-                  <div class="projcontainer">
-                      <div class="projectdiv">
-                          <div class="projecttype">Web Development & Data Science</div>
-                          <h3 class="projectheading">Sightseeing Helper</h3>
-                          <p class="projectpara">This app takes a group of photos a user has taken in one of their trips and suggests other locations that they can visit next time.</p>
-                          <div class="text-block-2"><a href="sightseeing.html">View Project (with process analysis)</a>
-                          </div>
-                      </div>
-                      <!--Using multiple images with different sizes for efficiency and faster loading times-->
-                      <img src="images/gps.jpg" loading="lazy" class="image-2 projectDisplayImgAlign">
-                  </div>
-      
-                  <div class="projcontainer">
-                      <div class="projectdiv">
-                          <div class="projecttype">Artificial Intelligence</div>
-                          <h3 class="projectheading">Reversi</h3>
-                          <p class="projectpara">A game of Reversi implemented using c++.</p>
-                          <div class="text-block-2"><a href="reversi.html">View Project</a></div>
-                      </div>
-                      <!--Using multiple images with different sizes for efficiency and faster loading times-->
-                      <img src="images/Reversi.png" loading="lazy" class="image-2 projectDisplayImgAlign">
-                  </div>
-              </div>
-          </div>
-      </div>
-
-      <!--Footer section-->
+        <!--Footer section-->
       <div class="section footer" id="contactSection">
         <div class="container container-defaults">
             <div class="footerholder">
@@ -132,6 +99,7 @@
         </div>
       </div>
     </main>
+
 </body>
 
 </html>

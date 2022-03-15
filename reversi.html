@@ -1,0 +1,126 @@
+<!--This is a portfolio project created for IAT339 Summer 2021 by Amarthya Kaushik Suresh, 301327624. Citations for this project are listed in the citations.txt file located in the root folder.-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Reversi</title>
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="css/normalize.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+
+    <!--Loading fonts from Google WebFonts. I have used the fonts "Inter" & "DM Serif Display" for this portfolio project.-->
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+        WebFont.load({
+            google: {
+                families: ["Inter:regular,600", "DM Serif Display:regular"]
+            }
+        });
+    </script>
+</head>
+
+<body class="body">
+    <!--Navbar code block-->
+    <!--Used SVG icons from https://boxicons.com/-->
+
+    <nav class="navbar">
+        <ul class="navbar-nav">
+
+            <li class="nav-item">
+                <a href="index.html" class="nav-link">
+                    <!--Icon retrieved from https://boxicons.com/?query=briefcase-->
+                    <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 24 24" style="fill:#ff7eee;"><path d="M20 6h-3V4c0-1.103-.897-2-2-2H9c-1.103 0-2 .897-2 2v2H4c-1.103 0-2 .897-2 2v11c0 1.103.897 2 2 2h16c1.103 0 2-.897 2-2V8c0-1.103-.897-2-2-2zm-5-2v2H9V4h6zM8 8h12v3H4V8h4zM4 19v-6h6v2h4v-2h6l.001 6H4z"></path></svg>
+                    <span class="link-text">Projects</span>
+                </a>
+            </li>
+
+            <li class="nav-item">
+                <a href="about.html" class="nav-link">
+                    <!--Icon retrieved from https://boxicons.com/?query=bot-->
+                    <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 24 24" style="fill: #ff7eee;"><path d="M21.928 11.607c-.202-.488-.635-.605-.928-.633V8c0-1.103-.897-2-2-2h-6V4.61c.305-.274.5-.668.5-1.11a1.5 1.5 0 0 0-3 0c0 .442.195.836.5 1.11V6H5c-1.103 0-2 .897-2 2v2.997l-.082.006A1 1 0 0 0 1.99 12v2a1 1 0 0 0 1 1H3v5c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5a1 1 0 0 0 1-1v-1.938a1.006 1.006 0 0 0-.072-.455zM5 20V8h14l.001 3.996L19 12v2l.001.005.001 5.995H5z"></path><ellipse cx="8.5" cy="12" rx="1.5" ry="2"></ellipse><ellipse cx="15.5" cy="12" rx="1.5" ry="2"></ellipse><path d="M8 16h8v2H8z"></path></svg>
+                    <span class="link-text">About</span>
+                </a>
+            </li>
+
+
+            <li class="nav-item">
+                <a href="#contactSection" class="nav-link">
+                    <!--Icon retrieved from https://boxicons.com/?query=message-->
+                    <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 24 24" style="fill: #ff7eee;"><path d="M20 2H4c-1.103 0-2 .894-2 1.992v12.016C2 17.106 2.897 18 4 18h3v4l6.351-4H20c1.103 0 2-.894 2-1.992V3.992A1.998 1.998 0 0 0 20 2zm-6 11H7v-2h7v2zm3-4H7V7h10v2z"></path></svg>
+                    <span class="link-text">Contact Me</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <!--Using Main Tag to contain all the body elements and create separation between nav and other elements. NavBar takes about 5rem space on the left, so I moved the main tag by 5 rem from the left.-->
+    <main>
+        <!--Everything except NAVBAR should be inside main-->
+        <div class="section">
+            <div class="container container-defaults">
+                <h1 class="projectpagetitle">Into Thin Air: A Short Film</h1>
+                <br>
+            </div>
+            <!--Using multiple images with different sizes for efficiency and faster loading times-->
+            <!-- <img src="images/Reversi.png" loading="lazy" sizes="100vw" srcset="images/_DSC4686-p-500.jpeg 500w, images/_DSC4686-p-800.jpeg 800w, images/_DSC4686-p-1600.jpeg 1600w, images/_DSC4686-p-2000.jpeg 2000w, images/_DSC4686-p-2600.jpeg
+                2600w, images/_DSC4686-p-3200.jpeg 3200w, images/_DSC4686.jpg 4200w " alt="short film project cover photo" class="image-4"> -->
+            <img src="images/Reversi.png" loading="lazy" alt="reversi board" class="image-4">
+        </div>
+        <div class="section">
+            <div class="container container-defaults">
+                <div class="grid-layout-defaults sidebysidegrid">
+                    <div class="projectinfoblock">
+                        <div class="projectlabel">Project Type</div>
+                        <div class="projectinfo">Artificial Intelligence</div>
+                        <div class="projectlabel">Technical Skills Applied</div>
+                        <div class="projectinfo">C++</div>
+                    </div>
+                    <div class="projectdescription descriptionBox">
+                        <h2>A game of Reversi, or Othello.</h2>
+                        <p>This is a game of Reversi, otherwise known as Othello. The goal of Reversi is to capture your opponents pieces by placing your own on either side of theirs, thereby surrounding it. </p>
+                        <a href="https://github.com/JayTatikonda/ReversiAI" target="_blank">Take a look at the code here!</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Footer section-->
+        <div class="section footer" id="contactSection">
+            <div class="container container-defaults">
+                <div class="footerholder"><img src="images/Amarthya-Kaushik-Suresh-Portfolio.png" loading="lazy" width="252" alt="portfolio logo" class="footerlogo">
+                    <p class="footerpara">This portfolio website was created as the final project for IAT339. Designed and built by Amarthya Kaushik Suresh.</p>
+                    <ul class="list list-defaults">
+                        <li>
+                            <a href="musicking-project.html" class="project-link-defaults">
+                                <div>MusicKing: A Music Streaming Web-app</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="raincitygardens-project.html" class="project-link-defaults">
+                                <div>RainCityGardens: Android Application</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="into-thin-air-project.html" class="project-link-defaults">
+                                <div>Into Thin Air: A Short Fim</div>
+                            </a>
+                        </li>
+                    </ul>
+
+                    <!--Contains all the social media contact icons and links-->
+                    <div class="socialcontainer">
+                        <a href="https://twitter.com/Amarthya271" target="_blank" class="sociallink project-link-defaults"><img src="images/Vector.png" loading="lazy" width="30" alt="twitter icon" class="socialimg"></a>
+                        <a href="https://www.instagram.com/amarthya_kaushik_official/" target="_blank" class="sociallink project-link-defaults"><img src="images/bi_instagram.png" loading="lazy" width="45" alt="instagram icon" class="socialimg"></a>
+                        <a href="https://www.linkedin.com/in/amarthyakaushik/" target="_blank" class="sociallink project-link-defaults"><img src="images/Vector-1.png" loading="lazy" width="45" alt="linkedin icon" class="socialimg"></a>
+                        <a href="mailto:kaushik271@live.com?subject=Contacting%20Regarding%20Web%20Portfolio" class="sociallink project-link-defaults "><img src="images/file-icons_microsoft-outlook.png" loading="lazy" width="45" alt="email icon" class="socialimg"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+</body>
+
+</html>
